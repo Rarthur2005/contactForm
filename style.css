@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+*{
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+}
+html,body {
+  height: 100%;
+  background-color: #4F5D75;
+  width: 100%;
+}
+
+#myform{
+  width: 300px;
+  background: #2D3142;
+  margin: 0 auto;
+  padding: 10px 20px;
+  position: relative;
+  border-radius: 5px;
+  margin-top: 50px;
+}
+#myform > :not(marquee){
+  z-index: 2;
+}
+#myform::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  border-radius: 5px 5px 0 0;
+  height: 100px;
+  z-index: 0;
+  background-color: #EF8354;
+}
+#success{
+  
+  background-color: green;
+  color: white;
+  visibility:hidden;
+  padding: 10px 20px;
+  font-size:1rem;
+  font-weight: bold;
+}
+#submit{
+  -webkit-appearance: none;
+  padding: 10px 20px;
+  background-color: #EF8354;
+  outline: 0;
+  width: 300px;
+  border: 0;
+  margin-bottom: 10px;
+  font-size:1rem;
+  border-radius:0 !important;
+  clip-path: 0;
+  font-weight: bold;
+}
+
+#submit:hover{
+  background-color: #e95516;
+  transition: linear .10s;
+}
+#myform input[type="text"], #myform input[type="email"],#myform textarea{
+  padding: 5px 10px;
+  width: 276px;
+  margin-bottom: 10px;
+  margin-top: 5px;
+  color: black;
+  outline: 0;
+  border: 0;
+  font-weight: light;
+}
+#myform textarea{
+  resize:vertical;
+  color: black;
+  outline: 0;
+  display:block;
+  border: 0;
+  height: 50px;
+}
+
+#myform h2{
+  z-index: 2;
+  position: relative;
+  margin-bottom: 50px;
+}
